@@ -3,15 +3,15 @@
 
 #include <jni.h>
 #include <android/log.h>
-#include "com_taobao_nbcache_CacheStorage.h"
+#include "com_yoson_cache_CacheStorage.h"
 #include "mStore.h"
 
 /*
- * Class:     com_taobao_nbcache_CacheStorage
+ * Class:     com_yoson_cache_CacheStorage
  * Method:    open
  * Signature: (Ljava/lang/String;Ljava/lang/String;III)Z
  */
-JNIEXPORT jobject JNICALL Java_com_taobao_nbcache_CacheStorage_open
+JNIEXPORT jobject JNICALL Java_com_yoson_cache_CacheStorage_open
   (JNIEnv *env, jobject object, jstring name, jstring path, jlong size, jint type, jboolean compressMode){
 
 	    const char *nameStr = env->GetStringUTFChars(name,0);
@@ -31,11 +31,11 @@ JNIEXPORT jobject JNICALL Java_com_taobao_nbcache_CacheStorage_open
 }
 
 /*
- * Class:     com_taobao_nbcache_CacheStorage
+ * Class:     com_yoson_cache_CacheStorage
  * Method:    insert
  * Signature: (Ljava/lang/String;ILjava/lang/String;IJZI)Z
  */
-JNIEXPORT jboolean JNICALL Java_com_taobao_nbcache_CacheStorage_insert
+JNIEXPORT jboolean JNICALL Java_com_yoson_cache_CacheStorage_insert
   (JNIEnv *env, jobject object, jbyteArray key, jbyteArray value, jboolean isoverwr, jint iscmp, jobject ptr){
 	//__android_log_print(ANDROID_LOG_INFO, "newCache", "in insert");
 	void * keyPtr = env->GetByteArrayElements(key, 0);
@@ -60,11 +60,11 @@ JNIEXPORT jboolean JNICALL Java_com_taobao_nbcache_CacheStorage_insert
 }
 
 /*
- * Class:     com_taobao_nbcache_CacheStorage
+ * Class:     com_yoson_cache_CacheStorage
  * Method:    delete
  * Signature: (Ljava/lang/String;I)Z
  */
-JNIEXPORT jboolean JNICALL Java_com_taobao_nbcache_CacheStorage_delete
+JNIEXPORT jboolean JNICALL Java_com_yoson_cache_CacheStorage_delete
   (JNIEnv *env, jobject object, jbyteArray key, jobject ptr){
 	void * keyPtr = env->GetByteArrayElements(key, 0);
 	jint keyLen = env->GetArrayLength(key);
@@ -75,11 +75,11 @@ JNIEXPORT jboolean JNICALL Java_com_taobao_nbcache_CacheStorage_delete
 }
 
 /*
- * Class:     com_taobao_nbcache_CacheStorage
+ * Class:     com_yoson_cache_CacheStorage
  * Method:    select
  * Signature: (Ljava/lang/String;I)Ljava/lang/String;
  */
-JNIEXPORT jbyteArray JNICALL Java_com_taobao_nbcache_CacheStorage_select
+JNIEXPORT jbyteArray JNICALL Java_com_yoson_cache_CacheStorage_select
   (JNIEnv *env, jobject object, jbyteArray key, jobject ptr){
 	//__android_log_print(ANDROID_LOG_INFO, "newCache", "read in");
 	void * keyPtr = env->GetByteArrayElements(key, 0);
@@ -131,11 +131,11 @@ JNIEXPORT jbyteArray JNICALL Java_com_taobao_nbcache_CacheStorage_select
 }
 
 /*
- * Class:     com_taobao_nbcache_CacheStorage
+ * Class:     com_yoson_cache_CacheStorage
  * Method:    close
  * Signature: ()Z
  */
-JNIEXPORT jboolean JNICALL Java_com_taobao_nbcache_CacheStorage_close
+JNIEXPORT jboolean JNICALL Java_com_yoson_cache_CacheStorage_close
   (JNIEnv *env, jobject object, jobject ptr){
 	mStore *store = (mStore *) env->GetDirectBufferAddress(ptr);
 	if(store == NULL)
@@ -148,11 +148,11 @@ JNIEXPORT jboolean JNICALL Java_com_taobao_nbcache_CacheStorage_close
 }
 
 /*
- * Class:     com_taobao_nbcache_CacheStorage
+ * Class:     com_yoson_cache_CacheStorage
  * Method:    destory
  * Signature: ()Z
  */
-JNIEXPORT jboolean JNICALL Java_com_taobao_nbcache_CacheStorage_destory
+JNIEXPORT jboolean JNICALL Java_com_yoson_cache_CacheStorage_destory
   (JNIEnv *env, jobject object, jobject ptr){
 	mStore *store = (mStore *) env->GetDirectBufferAddress(ptr);
 	//jboolean flagA = store->close();
@@ -164,11 +164,11 @@ JNIEXPORT jboolean JNICALL Java_com_taobao_nbcache_CacheStorage_destory
 }
 
 /*
- * Class:     com_taobao_nbcache_CacheStorage
+ * Class:     com_yoson_cache_CacheStorage
  * Method:    getAllKey
  * Signature: (Ljava/nio/ByteBuffer;)[Ljava/lang/String;
  */
-JNIEXPORT jobjectArray JNICALL Java_com_taobao_nbcache_CacheStorage_getAllKey
+JNIEXPORT jobjectArray JNICALL Java_com_yoson_cache_CacheStorage_getAllKey
   (JNIEnv *env, jobject object, jobject ptr){
 	mStore *store = (mStore *) env->GetDirectBufferAddress(ptr);
 	jint size = store->getNum();
@@ -197,11 +197,11 @@ JNIEXPORT jobjectArray JNICALL Java_com_taobao_nbcache_CacheStorage_getAllKey
 }
 
 /*
- * Class:     com_taobao_nbcache_CacheStorage
+ * Class:     com_yoson_cache_CacheStorage
  * Method:    reMaxSize
  * Signature: (JLjava/nio/ByteBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_com_taobao_nbcache_CacheStorage_reMaxSize
+JNIEXPORT jboolean JNICALL Java_com_yoson_cache_CacheStorage_reMaxSize
   (JNIEnv *env, jobject object, jlong size, jobject ptr){
 	mStore *store = (mStore *) env->GetDirectBufferAddress(ptr);
 	return store->reMaxSize(size);

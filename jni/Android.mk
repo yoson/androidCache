@@ -11,7 +11,7 @@ LOCAL_SRC_FILES := \
 		cpp/tchdb.c \
 		cpp/md5.c \
 		cpp/mStore.cpp \
-		com_taobao_nbcache_CacheStorage.cpp \
+		com_yoson_cache_CacheStorage.cpp \
 
 LOCAL_CFLAGS     := -std=c99
 LOCAL_CFLAGS += -D__STDC_CONSTANT_MACROS -Wl,-Map=test.map -g
