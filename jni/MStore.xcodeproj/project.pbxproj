@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1DEB5CC1A41B8F3004B5341 /* TBStorage.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1DEB5CB1A41B8F3004B5341 /* TBStorage.mm */; };
+		B1DEB5CF1A41B9C2004B5341 /* TBDataStorage.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1DEB5CE1A41B9C2004B5341 /* TBDataStorage.mm */; };
+		CD39FC34198A0DA4009DD9B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD39FC33198A0DA4009DD9B8 /* Foundation.framework */; };
+		CD39FC63198A0E84009DD9B8 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = CD39FC59198A0E84009DD9B8 /* md5.c */; };
+		CD39FC64198A0E84009DD9B8 /* mStore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD39FC5B198A0E84009DD9B8 /* mStore.cpp */; };
+		CD39FC65198A0E84009DD9B8 /* myconf.c in Sources */ = {isa = PBXBuildFile; fileRef = CD39FC5D198A0E84009DD9B8 /* myconf.c */; };
+		CD39FC66198A0E84009DD9B8 /* tchdb.c in Sources */ = {isa = PBXBuildFile; fileRef = CD39FC5F198A0E84009DD9B8 /* tchdb.c */; };
+		CD39FC67198A0E84009DD9B8 /* tcutil.c in Sources */ = {isa = PBXBuildFile; fileRef = CD39FC61198A0E84009DD9B8 /* tcutil.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD39FC2E198A0DA4009DD9B8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B1DEB5CA1A41B8F3004B5341 /* TBStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBStorage.h; sourceTree = "<group>"; };
+		B1DEB5CB1A41B8F3004B5341 /* TBStorage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TBStorage.mm; sourceTree = "<group>"; };
+		B1DEB5CD1A41B9C2004B5341 /* TBDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBDataStorage.h; sourceTree = "<group>"; };
+		B1DEB5CE1A41B9C2004B5341 /* TBDataStorage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TBDataStorage.mm; sourceTree = "<group>"; };
+		CD39FC30198A0DA4009DD9B8 /* libMStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD39FC33198A0DA4009DD9B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD39FC37198A0DA4009DD9B8 /* MStore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MStore-Prefix.pch"; sourceTree = "<group>"; };
+		CD39FC41198A0DA4009DD9B8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CD39FC44198A0DA4009DD9B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CD39FC59198A0E84009DD9B8 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		CD39FC5A198A0E84009DD9B8 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		CD39FC5B198A0E84009DD9B8 /* mStore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mStore.cpp; sourceTree = "<group>"; };
+		CD39FC5C198A0E84009DD9B8 /* mStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mStore.h; sourceTree = "<group>"; };
+		CD39FC5D198A0E84009DD9B8 /* myconf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = myconf.c; sourceTree = "<group>"; };
+		CD39FC5E198A0E84009DD9B8 /* myconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myconf.h; sourceTree = "<group>"; };
+		CD39FC5F198A0E84009DD9B8 /* tchdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tchdb.c; sourceTree = "<group>"; };
+		CD39FC60198A0E84009DD9B8 /* tchdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tchdb.h; sourceTree = "<group>"; };
+		CD39FC61198A0E84009DD9B8 /* tcutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcutil.c; sourceTree = "<group>"; };
+		CD39FC62198A0E84009DD9B8 /* tcutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcutil.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD39FC2D198A0DA4009DD9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD39FC34198A0DA4009DD9B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD39FC27198A0DA4009DD9B8 = {
+			isa = PBXGroup;
+			children = (
+				CD39FC35198A0DA4009DD9B8 /* MStore */,
+				CD39FC32198A0DA4009DD9B8 /* Frameworks */,
+				CD39FC31198A0DA4009DD9B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD39FC31198A0DA4009DD9B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD39FC30198A0DA4009DD9B8 /* libMStore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD39FC32198A0DA4009DD9B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD39FC33198A0DA4009DD9B8 /* Foundation.framework */,
+				CD39FC41198A0DA4009DD9B8 /* XCTest.framework */,
+				CD39FC44198A0DA4009DD9B8 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD39FC35198A0DA4009DD9B8 /* MStore */ = {
+			isa = PBXGroup;
+			children = (
+				B1DEB5CD1A41B9C2004B5341 /* TBDataStorage.h */,
+				B1DEB5CE1A41B9C2004B5341 /* TBDataStorage.mm */,
+				CD39FC59198A0E84009DD9B8 /* md5.c */,
+				CD39FC5A198A0E84009DD9B8 /* md5.h */,
+				CD39FC5B198A0E84009DD9B8 /* mStore.cpp */,
+				CD39FC5C198A0E84009DD9B8 /* mStore.h */,
+				CD39FC5D198A0E84009DD9B8 /* myconf.c */,
+				CD39FC5E198A0E84009DD9B8 /* myconf.h */,
+				CD39FC5F198A0E84009DD9B8 /* tchdb.c */,
+				CD39FC60198A0E84009DD9B8 /* tchdb.h */,
+				CD39FC61198A0E84009DD9B8 /* tcutil.c */,
+				CD39FC62198A0E84009DD9B8 /* tcutil.h */,
+				CD39FC36198A0DA4009DD9B8 /* Supporting Files */,
+				B1DEB5CA1A41B8F3004B5341 /* TBStorage.h */,
+				B1DEB5CB1A41B8F3004B5341 /* TBStorage.mm */,
+			);
+			name = MStore;
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		CD39FC36198A0DA4009DD9B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD39FC37198A0DA4009DD9B8 /* MStore-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD39FC2F198A0DA4009DD9B8 /* MStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD39FC53198A0DA4009DD9B8 /* Build configuration list for PBXNativeTarget "MStore" */;
+			buildPhases = (
+				CD39FC2C198A0DA4009DD9B8 /* Sources */,
+				CD39FC2D198A0DA4009DD9B8 /* Frameworks */,
+				CD39FC2E198A0DA4009DD9B8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MStore;
+			productName = MStore;
+			productReference = CD39FC30198A0DA4009DD9B8 /* libMStore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD39FC28198A0DA4009DD9B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = TaoBao;
+			};
+			buildConfigurationList = CD39FC2B198A0DA4009DD9B8 /* Build configuration list for PBXProject "MStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD39FC27198A0DA4009DD9B8;
+			productRefGroup = CD39FC31198A0DA4009DD9B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD39FC2F198A0DA4009DD9B8 /* MStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD39FC2C198A0DA4009DD9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1DEB5CC1A41B8F3004B5341 /* TBStorage.mm in Sources */,
+				CD39FC63198A0E84009DD9B8 /* md5.c in Sources */,
+				CD39FC66198A0E84009DD9B8 /* tchdb.c in Sources */,
+				CD39FC65198A0E84009DD9B8 /* myconf.c in Sources */,
+				CD39FC64198A0E84009DD9B8 /* mStore.cpp in Sources */,
+				B1DEB5CF1A41B9C2004B5341 /* TBDataStorage.mm in Sources */,
+				CD39FC67198A0E84009DD9B8 /* tcutil.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD39FC51198A0DA4009DD9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD39FC52198A0DA4009DD9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD39FC54198A0DA4009DD9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MStore.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cpp/MStore-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD39FC55198A0DA4009DD9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MStore.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cpp/MStore-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD39FC2B198A0DA4009DD9B8 /* Build configuration list for PBXProject "MStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD39FC51198A0DA4009DD9B8 /* Debug */,
+				CD39FC52198A0DA4009DD9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD39FC53198A0DA4009DD9B8 /* Build configuration list for PBXNativeTarget "MStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD39FC54198A0DA4009DD9B8 /* Debug */,
+				CD39FC55198A0DA4009DD9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD39FC28198A0DA4009DD9B8 /* Project object */;
+}
